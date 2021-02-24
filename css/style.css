@@ -865,22 +865,226 @@ footer img {
   position: absolute;
   width: 30px;
   height: 30px;
-  right: 20px;
-  top: 20px;
-  border: none;
+  right: 8px;
+  top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: transparent;
+}
+
+.button-modal:hover .icon-modal {
+  fill: var(--accent-color);
 }
 
 .icon-modal {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 50%;
-  left: 50%;
+  width: 18px;
+  height: 18px;
+  top: 14px;
+  left: 14px;
   transform: translate(-50%, -50%);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name,
+.input-tel,
+.input-email {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-title p {
+  margin-bottom: 12px;
+  margin-top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  columns: var(--title-text-color);
+}
+
+.modal-field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  ont-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.modal-field .icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  left: 12px;
+}
+
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-color: transparent;
+}
+
+.modal-checkbox {
+  position: relative;
+  margin-left: 36.38px;
+  margin-bottom: 30px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.modal-checkbox a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: -24.38px;
+  top: 4px;
+  background-image: url(/images/checkbox.svg);
+  background-size: cover;
+}
+
+.check-input:checked + .check-box {
+  background-image: url(/images/icon-check.svg);
+}
+
+textarea:focus,
+.input-name:focus,
+.input-tel:focus,
+.input-email:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.input-tel:focus + .modal-tel,
+.input-name:focus + .modal-name,
+.input-email:focus + .modal-email {
+  fill: var(--accent-color);
+}
+
+textarea {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.modal {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.button-submit {
+  position: absolute;
+  bottom: 40px;
+  left: 164px;
+  width: 200px;
+  height: 50px;
+
+  color: var(--primary-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  border: none;
+}
+
+/* mailing footer */
+
+.mailing-form {
+  position: relative;
+  padding: 12px 0 0 93px;
+}
+
+.mailing-form h3 {
+  margin: 0 0 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+
+.mailing-block {
+  display: flex;
+}
+
+.input-mailing {
+  width: 358px;
+  height: 50px;
+  padding: 16px;
+
+  color: var(--primary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+  background-color: var(--bg-color);
+}
+
+.mailing-button {
+  display: flex;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border: transparent;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
 }

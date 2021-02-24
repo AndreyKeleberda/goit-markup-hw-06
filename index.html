@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-05</title>
+    <title>goit-markup-hw-06</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -357,11 +357,70 @@
                 </li>
                 </ul>   
             </div>
+            <div class="mailing-block">
+                <form class="mailing-form">
+                    <h3>Подпишитесь на рассылку</h3>
+                    <div class="mailing-block">
+                        <label >
+                            <input class="input-mailing" type="email" name="email-mailing" placeholder="E-mail">
+                            </label>
+                            <button class="mailing-button">
+                                Подписаться 
+                                <svg class="client-icon" width="28" height="28" >
+                                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
     <!-- MODAL WINDOW -->
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
+            
+            <form class="modal">
+                <div class="modal-title">
+                    <p>Оставьте свои данные, мы вам перезвоним</p>
+                </div>
+                <label class="modal-field">
+                    <span class="modal-label">Имя</span>
+                    <span>
+                    <input class="input-name" type="text" name="name">
+                        <svg class="icon modal-name">
+                            <use href="./images/symbol-defs.svg#icon-person-form"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-field">
+                    <span class="modal-label">Телефон</span>
+                    <span>
+                        <input class="input-tel" type="tel" name="tel">
+                        <svg class="icon modal-tel">
+                            <use href="./images/symbol-defs.svg#icon-phone-form"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-field">
+                    <span class="modal-label">Почта</span>
+                    <span>
+                        <input class="input-email" type="email" name="email">
+                        <svg class="icon modal-email">
+                            <use href="./images/symbol-defs.svg#icon-email-form"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-field">
+                    <span class="modal-label">Комментарий</span>
+                    <textarea name="textarea"  rows="5" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="modal-checkbox">
+                    <input class="check-input" type="checkbox" name="checkbox">
+                    <span class="check-box"></span>
+                    Соглашаюсь с рассылкой и принимаю <a href=""> Условия договора</a>
+                </label>
+                <button class="button-submit" type="submit">Отправить</button>
+            </form>
             <button data-modal-close class="button-modal">
                 <svg class="icon-modal">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
