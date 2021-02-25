@@ -582,7 +582,7 @@ footer {
 }
 
 .footer-block {
-  width: 1170px;
+  width: 1200px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0;
@@ -912,6 +912,7 @@ textarea {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
 }
 
 .modal-title p {
